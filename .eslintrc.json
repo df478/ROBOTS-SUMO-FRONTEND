@@ -1,0 +1,19 @@
+// .eslintrc.json
+{
+  "extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended"],
+  "rules": {
+    // Permite usar 'any' explícitamente
+    "@typescript-eslint/no-explicit-any": "off",
+    // Ignorar variables no usadas que comiencen con _
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_",
+        "ignoreRestSiblings": true
+      }
+    ]
+  }
+}
